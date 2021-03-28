@@ -1,0 +1,60 @@
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import '/node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+.header {
+    .nav-link {
+        padding: .5rem 2rem !important;
+    }
+    .cart-informer {
+        .badge {
+            font-size: .67rem;
+            position: absolute;
+            transform: translate(-15px, 3px);
+        }
+    }
+}
+
+.product {
+    &-image {
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    &::before {
+        display: block;
+        content: 'Add to cart'
+    }
+    &::after {
+        font-family: bootstrap-icons;
+        display: block;
+        margin-left: 1rem;
+        font-size: 1.25em;
+        content: '\f23e'
+    }
+    &:disabled::before {
+        display: block;
+        content: 'Already in cart'
+    }
+    &:disabled::after {
+        font-family: bootstrap-icons;
+        display: block;
+        margin-left: 1rem;
+        font-size: 1.25em;
+        content: '\f239'
+    }
+}
+
+.remove-from-cart-button {
+    &::after {
+        display: block;
+        font-family: bootstrap-icons;
+        content: '\f5dd';
+        color: $danger;
+    }
+}

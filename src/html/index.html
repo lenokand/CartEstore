@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="stylesheet" href="bundle.css">
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary header shadow-sm">
+        <div class="container">
+            <a class="h2 text-decoration-none text-white" href="#">eStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/" data-route>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cart" data-route>Cart</a>
+                    </li>
+                </ul>
+                <div class="dropdown ms-lg-5 cart-informer" id="cart-informer">
+                    <a class="btn btn-secondary dropdown-toggle btn-lg" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-cart"></i>
+                        <span class="badge bg-primary rounded-pill"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-dark bg-secondary" aria-labelledby="dropdownMenuLink"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg-white shadow-sm my-3 py-3 rounded">
+        <div class="row g-3" id="route-view"></div>
+    </div>
+
+</body>
+
+</html>
